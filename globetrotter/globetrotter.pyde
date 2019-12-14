@@ -77,6 +77,22 @@ class Person:
         if self.x >= g.w/2:
             g.x += self.vx
     
+class Obstacle:
+    def__init__(self,x,y,w,h,imglist,location,img,img_cloud):
+        self.x=x
+        self.y=y
+        self.w=w
+        self.h=h
+        self.imglist= [Agra, Paris, Dubai]
+        self.img=loadImage(path+"/images/"+self.location)
+        self.img_cloud=loadImage(path+"/images/cloud.png"
+        self.location=location
+        
+    def monument_obstacle(self):
+        image(self.img,x,y)
+                        
+    def cloud_obstacle(self):
+        image(self.img_cloud,x,y)
         
         
 
